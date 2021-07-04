@@ -20,6 +20,8 @@ import platformDirectives from './directives/index'
 import platformComponents from './components/index'
 
 // install platform specific utils
+// 对静态标签做一些常规性判断。例如： 对于check + input 标签必须使用prop
+// 判断是否是对于标签等
 Vue.config.mustUseProp = mustUseProp
 Vue.config.isReservedTag = isReservedTag
 Vue.config.isReservedAttr = isReservedAttr
